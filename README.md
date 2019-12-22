@@ -24,7 +24,11 @@ Key function: <https://neoantigens.rech.io/reference/garnish_affinity.html>
 - Directly from R, (code from garnish_affinity)
 
 
-```
+```r
+library(magrittr)
+library(data.table)
+library(antigen.garnish)
+
 # input a data table of peptides for all human MHC types
 dt <- data.table::data.table(
   sample_id = "test",
@@ -37,7 +41,7 @@ dt <- data.table::data.table(
 
 - Input from Excel file
 
-```
+```r
 # input from Microsoft excel
 
 # load an example excel file

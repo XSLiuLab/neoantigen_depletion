@@ -56,7 +56,7 @@ dt <- data.table::data.table(
 
 dt <- garnish_affinity(dt, remove_wt = FALSE, binding_cutoff=Inf)
 # Keep only length-9 peptide
-dto <- dto[nchar(nmer) %in% 9]
+dto <- dt[nchar(nmer) %in% 9]
 ```
 
 

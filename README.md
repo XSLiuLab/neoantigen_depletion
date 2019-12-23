@@ -39,6 +39,27 @@ dt <- data.table::data.table(
   str
 ```
 
+For our data:
+
+```r
+library(magrittr)
+library(data.table)
+library(antigen.garnish)
+
+# input a data table of peptides for all human MHC types
+dt <- data.table::data.table(
+  sample_id = "test",
+  pep_mut = "MRLVDRRWA",
+  pep_wt="VRLVDRRWA",
+  mutant_index = "1",
+  MHC = "HLA-A*02:01 HLA-A*01:01 HLA-B*07:02 HLA-B*08:01 HLA-C*07:01 HLA-C*07:02")
+
+dt <- garnish_affinity(dt, remove_wt = FALSE, binding_cutoff=Inf)
+# Keep only length-9 peptide
+dto <- dto[nchar(nmer) %in% 9]
+```
+
+
 - Input from Excel file
 
 ```r

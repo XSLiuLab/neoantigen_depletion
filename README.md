@@ -7,7 +7,7 @@ Key function: <https://neoantigens.rech.io/reference/garnish_affinity.html>
 
 ## Steps for neoantigen depletion checking
 
-1. [ ] Install and deploy **antigen.garnish**
+1. [x] Install and deploy **antigen.garnish**
 2. [ ] Prepare input for **antigen.garnish**
 3. [ ] Run the package above for all mutations
 4. [ ] Select immunogenic neoantigens

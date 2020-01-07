@@ -6,12 +6,12 @@
 1. Download raw data from Van den Eynden J. et al. via zenodo https:// doi.org/10.5281/zenodo.2621365
 1. Install and deploy [antigen.garnish](https://github.com/immune-health/antigen.garnish) for IEDB score calculation
 1. Identify neoantigens by the following approaches:
-    - classically defined neoantigens (MHC affinity < 500 nM)
-    - alternatively defined neoantigens (ADNs, DAI > 5) (DAI, differential agretopicity index)
+    -  Neoantigens based only on MHC I binding (MHC affinity < 500 nM)
+    -  Differential agretopicity index(DAI, DAI > 5) 
     - IEDB high neoantigens (IEDB score > 0.9)
-1. Map the neoantigens to exome region
-1. Calculate the overlap between neoantigen location and HLA binding/non-binding region from Van den Eynden J. et al.
-1. Analyze and visualize the result
+2. Map the neoantigens to exome region
+3. Calculate the overlap between neoantigen location and HLA binding/non-binding region from Van den Eynden J. et al.
+4. Analyze and visualize the result
 
 
 ## Reference 
